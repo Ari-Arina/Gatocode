@@ -7,3 +7,5 @@
          style="width: 100%;">
   </a>
 </div>
+
+This is a project to help me practice for Coding Competitions more efficiently. I will built an IDE that runs and then 'submits' to compare the answers to the correct one while tracking time and showing the sample problem PDF. 
