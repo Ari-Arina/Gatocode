@@ -8,9 +8,13 @@
   </a>
 </div>
 
-WORK IN PROGRESS
-  Last update: November 2nd, 2025
-  -- Tested some features I might use later and practiced some C++.
+
+<div>
+  <h3>WORK IN PROGRESS</h3>
+  <p strong> Last update: November 2nd, 2025 </p>
+  <p>-- Tested some features I might use later and practiced some C++.<p>
+</div>
+
 
 This is a project to help me practice for Coding Competitions more efficiently. I will built an IDE that runs and then 'submits' to compare the answers to the correct one, showing compile time and if it exceeded the problem's allowed compile time to alert the user and not take it as correct, while tracking time for coding and showing the sample problem PDF. 
 
