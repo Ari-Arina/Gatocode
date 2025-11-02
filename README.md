@@ -25,7 +25,7 @@
     I am building an IDE that:
   </p>
   <ul>
-    <li>Runs and “submits” code automatically.</li>
+    <li>Runs code in Java (subject to change).</li>
     <li>Compares the program’s output to the expected output.</li>
     <li>Displays compile time and alerts the user if it exceeds the allowed limit.</li>
     <li>Tracks coding time.</li>
