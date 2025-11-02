@@ -8,6 +8,7 @@
   </a>
 </div>
 
+<hr  />
 
 <div>
   <h3>WORK IN PROGRESS</h3>
@@ -15,13 +16,73 @@
   <p>-- Tested some features I might use later and practiced some C++.<p>
 </div>
 
+<hr  />
 
-This is a project to help me practice for Coding Competitions more efficiently. I will built an IDE that runs and then 'submits' to compare the answers to the correct one, showing compile time and if it exceeded the problem's allowed compile time to alert the user and not take it as correct, while tracking time for coding and showing the sample problem PDF. 
+<div>
+    <h2>Project Overview</h2>
+  <p>
+    This project is designed to help me practice for coding competitions more efficiently.
+    I am building an IDE that:
+  </p>
+  <ul>
+    <li>Runs and “submits” code automatically.</li>
+    <li>Compares the program’s output to the expected output.</li>
+    <li>Displays compile time and alerts the user if it exceeds the allowed limit.</li>
+    <li>Tracks coding time.</li>
+    <li>Displays the sample problem PDF for reference.</li>
+  </ul>
+</div>
 
-What I want to add later on: 
-  Despite main functionality and prupose mentioned above, I do want to integrate differnt other functions: 
-    AI to explain the sample projects or give hints as needed, give hints on errors they need to fix, explain the correct answer's code, and compare it with what the user did. This ways users can understand why they got something wrong and can understand what they could do better/take into account next time.
-    Let users themslef add problems. My plan is to divide it into different competitions, then different years of the competitions, and then into different problems in that year. But I would also like users to add private or public competitions practices in the same format, which would require a PDF with all the problems that can be separated into each distinct problem, input judges would use, the expected output based on judges input, and compiling limit for each problem. Maybe integrated AI to facilitate users with this information and have a review page where they confim it is right could also be added.
-    Full competition mode. A mode where they have a time limit to solve all the problems, earn points for each correct, lose for each wrong/past compiler limit time, where they can also join in with others and compete. Some other features would be changed like the AI (which would not be permitted in full competition mode)
-    Leaderboard. I would also use a leaderboard to motivate people to practice, this would be base on time, solved problems, and maybe points based on the previous factors.
-    Full page problems. A mode where instead of picking individual problems, you can see the whole PDF problem of that year's competition, select which one you'll code, and do the same as the normal individual problem practice but instead showing all the problems.
+<hr  />
+
+<div>
+  <h2>Planned Features</h2>
+
+  <h3>AI Integration</h3>
+  <p>Planned AI features include:</p>
+  <ul>
+    <li>Explain sample problems or give hints as needed.</li>
+    <li>Point out and explain coding errors.</li>
+    <li>Compare the user’s solution to the correct one and explain the differences.</li>
+  </ul>
+  <p>These features will help users understand why they got something wrong and what to improve.</p>
+
+  <h3>User-Added Problems</h3>
+  <p>Users will be able to add their own practice problems, organized by:</p>
+  <ul>
+    <li>Competition name</li>
+    <li>Year</li>
+    <li>Individual problems</li>
+  </ul>
+  <p>Each problem entry will include:</p>
+  <ul>
+    <li>A PDF containing all problems (can be split into individual problems)</li>
+    <li>Judge input files</li>
+    <li>Expected output</li>
+    <li>Compile time limit</li>
+  </ul>
+  <p>AI assistance may help extract and organize this data, followed by a confirmation step where users verify the information.</p>
+
+  <h3>Full Competition Mode</h3>
+  <ul>
+    <li>Solve multiple problems under a time limit.</li>
+    <li>Points for correct solutions; penalties for wrong or late submissions.</li>
+    <li>Optional multiplayer to compete with others.</li>
+    <li>AI assistance disabled in this mode.</li>
+  </ul>
+
+  <h3>Leaderboard</h3>
+  <p>Leaderboard based on:</p>
+  <ul>
+    <li>Time</li>
+    <li>Number of problems solved</li>
+    <li>Points earned</li>
+  </ul>
+
+  <h3>Full PDF Mode</h3>
+  <p>
+    View the entire competition PDF, select a problem to solve from the document,
+    and practice as if working from the original contest sheet.
+  </p>
+</div>
+
