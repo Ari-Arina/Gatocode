@@ -3,6 +3,27 @@
 #include <string>
 using namespace std;
 
+bool compareFiles (ifstream& result) {
+    ifstream expect("expected.txt");
+    string a;
+    string b;
+    int lines = 0;
+
+    while ( expect >> a ) {
+        lines++;
+    }
+
+    for (int i = 0; i < lines; i++) {
+        getline(expect, a);
+        getline(result, b); 
+        if ( a != b ) {
+            return false;
+        }
+    }
+
+    return true;
+}
+
 int main() {
     cout << "Start of program" << endl;
 
@@ -42,5 +63,13 @@ int main() {
 
     outputFile.close();
 
+    ifstream fillFile("output.txt");
+    bool result = compareFiles( fillFile );
+    fillFile.close();
+
+    cout << boolalpha;
+    cout << result << endl;
+
     return 0;
 }
+
