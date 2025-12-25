@@ -27,13 +27,38 @@ bool compareFiles (ifstream& result) {
 int main() {
     cout << "Start of program" << endl;
 
-    ifstream inputFile("input.txt");
-    if (!inputFile.is_open()) {
+    ofstream codeFile("code.cpp");
+    if (!codeFile.is_open()) {
         cerr << "Failed to open input.txt" << endl;
         return 1;
     }
 
-    int arr[4];
+    string line = "";
+    cout << "Start coding! Type 'gatocode quit' when done";
+    cin >> line;
+
+    while (line != "gatocode quit") {
+        // Line to fill out the code.cpp file
+        cin >> line;
+        getline(codeFile, line);
+    }
+
+    codeFile.close();
+
+    return 0; 
+}  
+
+  /*  ifstream fillFile("output.txt");
+    bool result = compareFiles( fillFile );
+    fillFile.close();
+
+    cout << boolalpha;
+    cout << result << endl;
+
+    return 0; */
+
+/*
+      int arr[4];
     int index = 0;
 
     while (inputFile >> arr[index]) {
@@ -63,13 +88,4 @@ int main() {
 
     outputFile.close();
 
-    ifstream fillFile("output.txt");
-    bool result = compareFiles( fillFile );
-    fillFile.close();
-
-    cout << boolalpha;
-    cout << result << endl;
-
-    return 0;
-}
-
+*/
