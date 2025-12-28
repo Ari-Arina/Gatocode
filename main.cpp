@@ -15,12 +15,11 @@ bool compareFiles (ifstream& result) {
 
     for (int i = 0; i < lines; i++) {
         getline(expect, a);
-        getline(result, b); 
+        getline(result, b);
         if ( a != b ) {
             return false;
         }
     }
-
     return true;
 }
 
@@ -34,58 +33,15 @@ int main() {
     }
 
     string line = "";
-    cout << "Start coding! Type 'gatocode quit' when done";
-    cin >> line;
+    cout << "Start coding! Type 'gatocode' when done";
+    getline(cin, line);
 
-    while (line != "gatocode quit") {
-        // Line to fill out the code.cpp file
-        cin >> line;
-        getline(codeFile, line);
+    while (line != "gatocode") {
+        codeFile << line << endl;
+        getline(cin, line);
     }
 
     codeFile.close();
 
     return 0; 
 }  
-
-  /*  ifstream fillFile("output.txt");
-    bool result = compareFiles( fillFile );
-    fillFile.close();
-
-    cout << boolalpha;
-    cout << result << endl;
-
-    return 0; */
-
-/*
-      int arr[4];
-    int index = 0;
-
-    while (inputFile >> arr[index]) {
-        index++; 
-    }
-
-    inputFile.close();
-
-    ofstream outputFile("output.txt");
-    
-    for (int i = 0; i < arr[0]; i++) {
-        int depth = arr[i+1];
-        int minutes = 0;
-        int result = 60;
-        
-        minutes += (depth/10)*2;
-        minutes += (depth-30)/10;
-
-        result -= minutes+1;
-
-        if (result < 0) {
-            result = 0;
-        }
-
-        outputFile << result << " minute(s) at " << depth << " feet" << endl;
-    }
-
-    outputFile.close();
-
-*/
